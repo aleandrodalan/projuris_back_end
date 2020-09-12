@@ -22,11 +22,6 @@ public class ResponsavelServiceImpl implements ResponsavelService {
 	}
 
 	@Override
-	public Responsavel update(Responsavel responsavel) {
-		return repository.save(responsavel);
-	}
-
-	@Override
 	public void deleteById(Long id) {
 		repository.deleteById(id);
 	}
