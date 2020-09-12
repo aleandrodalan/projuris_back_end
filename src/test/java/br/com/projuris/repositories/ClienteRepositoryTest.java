@@ -36,13 +36,13 @@ public class ClienteRepositoryTest {
 	}
 	
 	@Test
-	public void salvarCliente() {
+	public void testSalvarCliente() {
 		Cliente clienteSalvo = repository.save(this.cliente);
 		Assertions.assertNotNull(clienteSalvo);
 	}
 	
 	@Test
-	public void buscarClientePorId() {
+	public void testBuscarClientePorId() {
 		Optional<Cliente> cliente = repository.findById(1L);
 		Assertions.assertNotNull(cliente);
 	}

@@ -32,7 +32,7 @@ public class ResponsavelRepositoryTest {
 	
 	
 	@Test
-	public void salvarResponsavel() {
+	public void testSalvarResponsavel() {
 		Responsavel responsavelSalvo = repository.save(responsavel);
 		Assertions.assertNotNull(responsavelSalvo);
 	}
